@@ -190,6 +190,11 @@ class User extends ContentContainerActiveRecord implements \yii\web\IdentityInte
         return $this->id;
     }
 
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
     public function getAuthKey()
     {
         return $this->guid;
